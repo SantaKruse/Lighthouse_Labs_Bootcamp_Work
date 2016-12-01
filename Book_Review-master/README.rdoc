@@ -1,0 +1,12 @@
+== README
+
+A simple Rails book review app
+
+To run the server type 'rails s'
+
+To access the site visit localhost/3000
+
+
+== VERSIONS
+
+ruby '2.2.4'

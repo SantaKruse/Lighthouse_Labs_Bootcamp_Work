@@ -1,0 +1,9 @@
+<div class="well cannon">
+  <img class="the_dead" id="dead_image" src="https://s-media-cache-ak0.pinimg.com/736x/15/de/e3/15dee31bbd4c05beb4802fb81bc420a8.jpg">
+</div>
+<% @dead.each do |corpse| %>
+  <audio autoplay id="cannon_sound" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 7000)"><source src="../../audio/canon.mov"></source></audio>
+  <div class="well cannon" id="dead_wall">
+    <img class = "the_dead" id="corpse_<%= corpse.id %>" src="<%= corpse.photo_url %>">
+  </div>
+<% end %>

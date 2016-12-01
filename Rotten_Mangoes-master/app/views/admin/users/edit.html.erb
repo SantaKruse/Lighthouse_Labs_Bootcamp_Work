@@ -1,0 +1,21 @@
+<h1>Rotten Mangoes Users</h1>
+<%= link_to "Back to users", admin_users_path %><br/>
+
+<h2>Edit this user.</h2>
+<%= form_for [:admin, @user] do |f| %>
+  <div>
+    <%= f.label "First Name" %><br>
+    <%= f.text_field "firstname" %>
+  </div>
+  <div>
+    <%= f.label "Last Name" %><br>
+    <%= f.text_field "lastname" %>
+  </div>
+  <div>
+    <%= f.label "Profile Type" %><br>
+    <%= f.text_field "profile_type" %>
+  </div>
+  <div>
+    <%= f.submit "Submit" %> 
+  </div>
+<% end %>

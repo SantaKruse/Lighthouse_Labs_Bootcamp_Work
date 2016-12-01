@@ -1,0 +1,20 @@
+<h1>Post a Song</h1>
+<hr/>
+
+<form method="post" action="/songs">
+  <div>
+    <label>Song name:</label>
+    <input type="text" name="title" value="<%= @song.title %>">
+  </div>
+  <div>
+    <label>Artist:</label>
+    <input type="text" name="artist" value="<%= @song.artist %>">
+  </div>
+  <div>
+    <label>URL:</label>
+    <input type="text" name="url" value="<%= @song.url %>">
+  </div>
+  <div>
+    <input type="submit" value="Submit" >
+  </div>
+</form>

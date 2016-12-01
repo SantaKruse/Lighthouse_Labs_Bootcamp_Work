@@ -1,0 +1,172 @@
+
+#circle{
+  background-image: url("../images/HGCapitolSeal.jpg");
+}
+
+#mainpage{
+  background-color: #060608;
+}
+
+.user_image img{
+ height:150px;
+ width:150px;
+ position:absolute;
+ border-radius: 50%;
+}
+
+#user_image:hover{
+  border: 10px solid #6D6E72;
+}
+
+.lighthouse_image img{
+   height:300px;
+   width:300px;
+   position:absolute;
+   border-radius: 50%;
+}
+
+.lighthouse_image_stats img{
+   height:100px;
+   width:100px;
+   border-radius: 50%;
+}
+
+.lighthouse_image_stats{
+  right:-525px;
+  top: 10px;
+  position:relative;
+}
+
+#lighthouse_image_stats:hover{
+  border: 5px solid grey;
+}
+
+#lighthouse_image:hover{
+  border: 10px solid #6D6E72;
+}
+
+.tribute-circle{
+  height: 1350px;
+  position: relative;
+   border-radius: 50%;
+}
+
+#assignment-title{
+  margin-bottom: 1em;
+}
+
+#assignment-question{
+  margin-bottom: 1em;
+}
+
+.question_response{
+  display: none;
+}
+
+#submit_response{
+  display: none;
+}
+
+.graph_image{
+   height:70px;
+   width:70px;
+   position:absolute;
+   border-radius: 10%; 
+}
+
+#dead_image{
+  opacity: 0.7;
+}
+
+#dead_image:hover{
+  border: 10px solid #6D6E72;
+}
+
+.profile_photo{
+ height:300px;
+ width:300px;
+ border-radius: 50%;
+ margin: auto;
+ display:block;
+
+
+} 
+
+#loginimage{
+  width: 450px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 25em;
+}
+
+#login{
+  padding: 20px;
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  color: white;
+  font-size: 50px;
+}
+
+#users-title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#stats-title{
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#stats-sub-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div {
+background: #060608;
+}
+
+body {
+  background: '#060608';
+  font-family: 'Jura', sans-serif;
+  color: #E69628;
+
+}
+
+.chart{
+  height: 1350px;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.spacer{
+   background: '#060608';
+}
+
+
+#button-main{
+  color: white;
+  margin-left: 50em;
+
+}
+
+.lighthouse_image_stats{    -webkit-animation: spin 1.5s 1 linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+
+.container{
+  height: 100%;
+  background: #060608;
+}
+

@@ -1,0 +1,59 @@
+<% unless session[:user_id] %>
+  <div class="container" id="assignments">
+    <div class="well text-center">
+      <h2>YOU ARE NOT LOGGED IN!</h2>
+      <h3>Please sign up / log in to see your assignments</h3>
+      <a href="/" class="btn btn-primary">SIGN UP / LOGIN</a>
+    </div>
+  </div>
+<% else %>
+  <% if session[:user_id] == @user.id %>
+    <div class="container assignments" id="assignments">
+      <% @assignments.each do |assignment| %>
+        <% unless response_exists(session[:user_id], assignment.id) %>
+           <% if assignment_due(session[:user_id],assignment) %>
+            <br>
+            <br>
+              <div class="well" style="width: 900px; margin: auto;" >
+                <div class="form-group assignments">
+                  <h3 class="text-center" id="assignment-title" style="font-size: 40px;"><%= assignment.name %> [<%= assignment.id %>]</h3>
+                  <h5 class="text-center" style="font-size: 35px;"><small>DUE: <%= assignment_due_date(session[:user_id],assignment).to_date %></small></h5>
+                  <form id="form_<%= assignment.id %>" method="POST" action="/response/<%= assignment.id %>" data-assignmentid="<%= assignment.id %>"> 
+
+                    <div class="rating_response assignments">
+                      <br/>
+                      <h4 class="text-center" id="assignment-question" style="font-size: 35px;">
+                        How was this assignment?
+                      </h4>
+                      <div class="text-center assignments">
+                        <label class="btn" style="font-size: 35px;" for="easy_<%= assignment.id %>">
+                          too easy
+                          <input data-assignmentid="<%= assignment.id %>" class="rating" id="easy_<%= assignment.id %>" name="rating" type="radio" value="1" />
+                        </label>
+                        <label class="btn" style="font-size: 35px;" for="medium_<%= assignment.id %>">
+                          just right
+                          <input data-assignmentid="<%= assignment.id %>" class="rating" id="medium_<%= assignment.id %>" name="rating" type="radio" value="2" />    
+                        </label>
+                        <label class="btn" style="font-size: 35px;" for="hard_<%= assignment.id %>">
+                          too hard
+                          <input data-assignmentid="<%= assignment.id %>" class="rating" id="hard_<%= assignment.id %>" name="rating" type="radio" value="3" />
+                        </label>
+                        <br/>
+                        <h5 class="question_response" style="font-size: 35px;">Awesome.<br/>Now just a quick question:</h5>
+                        <br/>
+
+                        <h4 class="question_response" style="font-size: 35px;" id="question_text">assignment question populates here depending on rating</h4>
+                        <input type="submit" class="btn btn-primary question_response" id="true_<%= assignment.id %>" name="answer" value="TRUE">
+                        <input type="submit" class="btn btn-primary question_response" id="false_<%= assignment.id %>" name="answer" value="FALSE">
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+           <%  end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>

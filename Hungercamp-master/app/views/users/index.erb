@@ -1,0 +1,49 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="circle">
+
+  <audio autoplay>
+    <source src="../../audio/anthemv2.mov"></source>
+  </audio>
+
+  <div class="container">
+    <h1 id="users-title"> HUNGER CAMP </h1>
+      <div class="tribute-circle">
+        <% @x_center = 480 %>
+        <% @y_center = 750 %>
+        <% @theta = 0 %>
+        <% @step = 2*Math::PI/20 %>
+        <% id_number = 0 %>
+          <% until @theta >= 360 || id_number == 20   %>
+            <% @x = @x_center + 550*Math.cos(@theta) %>
+            <% @y = @y_center + 550*Math.sin(@theta) %> 
+              <div class="user_image" style="bottom:<%= @y %>px; left:<%= @x %>px; position:absolute">
+                <a href="/users/<%= @users[id_number].id %>">
+                  <img id="user_image" src="<%= @users[id_number].photo_url %>">
+                  <% if @users[id_number].time_of_death < Time.now %>
+                    <img id="dead_image" src="https://s-media-cache-ak0.pinimg.com/736x/15/de/e3/15dee31bbd4c05beb4802fb81bc420a8.jpg">
+                    <% @dead << @users[id_number] %>
+                  <%end%>
+                </a> 
+              </div>
+              <% id_number += 1 %>
+              <% @theta += @step %>
+          <%end%>
+          <div class="lighthouse_image" style="bottom:830px; left:400px; position:absolute">
+            <a href="/stats">
+              <img id="lighthouse_image" src="http://www.lighthouselabs.ca/static-assets/lighthouse-labs.png"> 
+            </a>  
+          </div>
+      </div>
+
+      <% if @dead.any? && session[:users_view] == nil %>
+        <% session[:users_view] = true %>
+        <%= erb :'users/_dead' %>
+      <% end %>
+  </div>
+
+</body>
+
+

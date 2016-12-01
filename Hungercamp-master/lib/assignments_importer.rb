@@ -1,0 +1,37 @@
+class AssignmentsImporter
+  def import
+    Assignment.create(name: 'Shakil The Dog (CR)', due_date: 1, ruby_points: 120, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'The Yuppie Vancouverite', due_date: 1, ruby_points: 60, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'States & Cities (CR)', due_date: 2, ruby_points: 90, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Pop Bottle Recycler', due_date: 2, ruby_points: 150, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: '2 Player Game', due_date: 3, ruby_points: 120, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Candidates (CR)', due_date: 3, ruby_points: 180, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'TwO-O-Player Game', due_date: 4, ruby_points: 150, html_points: 0, database_points: 0, die_hours: 24) 
+    Assignment.create(name: 'Debugging with RSPec', due_date: 5, ruby_points: 30, html_points: 0, database_points: 0, die_hours: 24) 
+    Assignment.create(name: 'Intro to RSpec & TDD', due_date: 6, ruby_points: 60, html_points: 0, database_points: 0, die_hours: 24) 
+    Assignment.create(name: 'Contact List App', due_date: 7, ruby_points: 300, html_points: 0, database_points: 0, die_hours: 24 ) 
+    Assignment.create(name: 'Exceptional Gaming (CR)', due_date: 7, ruby_points: 60, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Warcraft 3 Barracks Simulator (CR)', due_date: 8, ruby_points: 90, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Warcraft Tested Enhancements', due_date: 8, ruby_points: 270, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'HackerNews Web Scraper (CR)', due_date: 9, ruby_points: 180, html_points: 0, database_points: 0, die_hours: 24 ) 
+    Assignment.create(name: 'Robot Enhancements #1', due_date: 10, ruby_points: 120, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Robot Enhancements #2 (CR)', due_date: 10, ruby_points: 90, html_points: 0, database_points: 0, die_hours: 12 ) 
+    Assignment.create(name: 'Assessment Test #1', due_date: 11, ruby_points: 120, html_points: 0, database_points: 0, die_hours: 24 ) 
+    Assignment.create(name: 'SQLZoo', due_date: 12, ruby_points: 0, html_points: 0,database_points: 180, die_hours: 24 ) 
+    Assignment.create(name: 'Learn SQL The "Hard" Way (Tutorial)', due_date: 13, ruby_points: 5, html_points: 0, database_points: 120, die_hours: 24 ) 
+    Assignment.create(name: 'Bookstore SQL Assignment (CR)', due_date: 14, ruby_points: 100, html_points: 0, database_points: 140, die_hours: 12 ) 
+    Assignment.create(name: 'PGExercises', due_date: 14, ruby_points: 0, html_points: 0, database_points: 120, die_hours: 12 ) 
+    Assignment.create(name: 'Talking to the DB from Ruby', due_date: 15, ruby_points: 10, html_points: 0, database_points: 50, die_hours: 12 ) 
+    Assignment.create(name: 'Contact List App (v2)', due_date: 15, ruby_points: 100, html_points: 0, database_points: 140, die_hours: 12 ) 
+    Assignment.create(name: 'Stores & Employees (CR)', due_date: 16, ruby_points: 90, html_points: 0, database_points: 90, die_hours: 12 ) 
+    Assignment.create(name: 'Contact List App (v3)', due_date: 16, ruby_points: 90, html_points: 0, database_points: 90, die_hours: 12 ) 
+    Assignment.create(name: 'Students & Teachers', due_date: 17, ruby_points: 100, html_points: 0, database_points: 140, die_hours: 12 ) 
+    Assignment.create(name: 'Students & Teachers pt. 2 (CR)', due_date: 17, ruby_points: 45, html_points: 0, database_points: 45, die_hours: 12 ) 
+    Assignment.create(name: 'First Sinatra App (Tutorial)', due_date: 18, ruby_points: 200, html_points: 0, database_points: 160, die_hours: 12 ) 
+    Assignment.create(name: 'Assessment Test #2', due_date: 18, ruby_points: 60, html_points: 0, database_points: 60, die_hours: 12 )     
+    Assignment.create(name: 'Staff Photo Wall', due_date: 19, ruby_points: 40 , html_points: 100, database_points: 40, die_hours: 24 )
+    Assignment.create(name: 'Sinatra App 2 - Music Wall (CR)', due_date: 20, ruby_points: 30, html_points: 150, database_points: 30, die_hours: 24 )
+  end
+end
+
+  

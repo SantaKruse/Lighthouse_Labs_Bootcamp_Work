@@ -1,0 +1,29 @@
+<% unless session[:user_id] %>
+  <% if @user.errors.any? %>
+    <div>
+      <strong>Some issues with your information, please fix them:</strong>
+      <ul>
+        <% @user.errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="text-center col-md-3 authentication">
+    <div class="well auth">
+    <form id="signup" method="POST" action="/signup">
+      <input class="form-control signup" type="text" name="first_name" placeholder="first name"/>
+      <input class="form-control signup" type="text" name="last_name" placeholder="last name"/>
+      <input class="btn btn-primary signup" type="submit" value="SIGN UP"/>
+    </form>
+    </div>
+    <h4><strong>OR</strong></h4>
+    <div class="well auth">
+      <form  method="POST" action="/login" >
+        <input class="form-control login" type="text" name="first_name" placeholder="first name"/>
+        <input class="form-control login" type="text" name="last_name" placeholder="last name" />
+        <input class="btn btn-primary" type="submit" value="LOGIN" />
+      </form>
+    </div>
+  </div>
+<% end %>

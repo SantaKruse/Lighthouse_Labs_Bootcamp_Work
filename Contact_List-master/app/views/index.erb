@@ -1,0 +1,42 @@
+<div class="container">
+
+  <h1>Home Page</h1>
+  <div class="row">
+    <div class="col-md-2">
+      <legend>New Contact</legend>
+      <form id="new_contact_form">
+        <input type="text" id="name" placeholder="name"><br>
+        <input type="text" id="email" placeholder="email"><br>
+        <input type="text" id="address" placeholder="address"><br>
+        <input type="text" id="phone" placeholder="phone"><br>
+        <br>
+        <button id="new_contact">New Contact</button><br>
+      </form>
+      <br>
+      <legend>Search Contact</legend>
+      <input type="text" id="search_contact" placeholder="name"><br>
+      <br>
+      <br>
+    </div>
+    <div class="col-md-8">
+      <div id="results">
+        <table id="contacts">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Modify</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <button id="load_contacts">Load All Contacts</button><br>
+    </div>
+  </div>
+</div>

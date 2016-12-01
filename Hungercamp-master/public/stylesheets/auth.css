@@ -1,0 +1,27 @@
+.authentication {
+  float:none;
+  margin: 0 auto;
+}
+
+.auth {
+  background: black;
+  border-color: black;
+  display: inline-block;
+}
+
+.login {
+  margin: 5px;
+}
+
+.signup {
+  margin: 5px;
+}
+
+#loginimage{
+  margin: 0 auto;
+}
+
+.assignments {
+  background: initial;
+  border-color: initial;
+}

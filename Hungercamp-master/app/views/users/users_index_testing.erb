@@ -1,0 +1,23 @@
+    <div class="row">
+      <% @users.each do |user| %>
+        <div class="col-xs-3">
+          <div class="changing-pic">
+            <div class="face"> 
+              <div class="name">
+                <a href="/users/<%= user.id %>">
+                  <%= user.first_name %>
+               </a>
+              </div>
+              <a href="/users/<%= user.id %>">
+                <img class="student_image" src="<%= user.photo_url %>">
+              </a> <!-- this is where do links  -->
+            </div>
+            <div class="dead">
+              <% if user.time_of_death < Time.now %>
+                <img class="in_memory_image" src="https://s-media-cache-ak0.pinimg.com/736x/15/de/e3/15dee31bbd4c05beb4802fb81bc420a8.jpg">
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>

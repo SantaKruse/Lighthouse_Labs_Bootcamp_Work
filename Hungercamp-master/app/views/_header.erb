@@ -1,0 +1,10 @@
+<header>
+  <div class="form-group">
+    <% if session[:user_id] %>
+      <form class="form-horizontal" id="login" method="POST" action="/logout" >
+        <input class="btn btn-primary pull-right btn-lg" type="submit" value="Logout" />
+      </form>
+    <% end %>
+    </form>
+  </div>
+</header>

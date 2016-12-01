@@ -1,0 +1,24 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="mainpage">
+
+  <audio autoplay>
+    <source src="../../audio/Hunger_Games_Whistle_Sound_Effect.mp3"></source>
+  </audio>
+
+  <div class="container text-center">
+    <h1 id="stats-title"> Hunger Camp </h1>
+    <a href="/users">
+      <img id="loginimage" class="img-responsive center-block" src="http://static.tumblr.com/nny3xpd/8bVm6d000/hunger-games.png" >
+    </a>
+    <h1 id="stats-sub-title"><strong> Are <em>you</em> ready to volunteer? </strong></h1>
+  </div>
+  <div class="container text-center">
+    <%= erb :'_authenticate' %>
+  </div>
+</body>
+

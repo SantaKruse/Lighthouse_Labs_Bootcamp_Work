@@ -1,0 +1,34 @@
+ul#countdown {
+	margin-top: 0em;
+	margin-bottom: 5em;
+	margin-left: 23em;
+	padding: 26px;
+	position: relative;
+}
+ul#countdown li{
+	background-color: #6D6E72;
+	color: white;
+	display: inline;
+	float: left;
+	font: normal bold 70px Arial;
+	letter-spacing: 5px;
+	margin-left: 5px;
+	text-align: center;
+	width: 100px;
+	border-radius: 5px;
+	padding-bottom: 5px;
+
+
+}
+ul#countdown span {
+	padding-left: 0px;
+	display: block;
+
+}
+ul#countdown  p.timeRefDays, ul#countdown  p.timeRefHours, ul#countdown  p.timeRefMinutes, ul#countdown  p.timeRefSeconds{
+	font: normal normal 12px Arial;
+	letter-spacing: 0;
+	margin: 0;
+	padding-bottom: 0px;
+
+}

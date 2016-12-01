@@ -1,0 +1,21 @@
+<p>
+  Title: <%= @song.title %>
+</p>
+
+<p>
+  Artist: <%= @song.artist %>
+</p>
+
+  <p><a href="<%= @song.url %>">Link to song</a></p>
+  <p><%= @song.created_at %></p>
+
+<hr/>
+
+<p>Other songs from this artist
+  <%@songs.each do |song|%>
+
+  <p><a href="/songs/<%= song.id %>"><%= song.title%></a></p>
+
+
+  <%end%></p>
+<a href="/songs">Back to All Songs</a>
